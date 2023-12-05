@@ -7,7 +7,7 @@
     <title>allforone.com</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- <style>
+     <style>
         * {
             box-sizing: border-box;
         }
@@ -45,7 +45,7 @@
             height: 100%;
             margin-top: 60px;
         }
-    </style> -->
+    </style> 
 </head>
 
 <body>
@@ -55,45 +55,32 @@
 
 
 
-        <!-- <h1 style="position: center;">Hello there</h1>
+        <h1 style="position: center;">Hello there</h1>
         <input type="text" id="inp">
         <input type="submit" id="submit" onclick="output()">
-    -->
-    <p id="out"></p>
-        <script>
-
-            function fib(z){
-                let y,sum,x;
-                sum=1;
-                x=0;
-                for(let i=0;i<z;i++){
-                    x=y;
-                    y=sum
-                    sum+=x;
-                    document.getElementById("out").innerHTML=sum;
-                }
-            }
-        // function output() {
-        //     let message = document.getElementById('out');
-        //     message.innerHTML = '';
-        //     let inp = document.getElementById('inp').value;
-        //     try {
-        //         if (input.trim() == "")
-        //             throw "is empty";
-        //             if (isNaN(inp))
-        //                 throw 'is not a number';
-        //             inp = Number(inp);
-        //             inp=Number(inp);
-        //         if (inp > 5)
-        //             throw 'high';
-        //         if (inp== 5)
-        //             throw 'average';
-        //         if (inp < 5)
-        //             throw 'low';
-        //     } catch (err) {
-        //         message.innerHTML = "Output " + err;
-        //     }
-        // }
+  
+    
+         function output() {
+             let message = document.getElementById('out');
+             message.innerHTML = '';
+             let inp = document.getElementById('inp').value;
+             try {
+                 if (input.trim() == "")
+                     throw "is empty";
+                     if (isNaN(inp))
+                         throw 'is not a number';
+                     inp = Number(inp);
+                     inp=Number(inp);
+                 if (inp > 5)
+                     throw 'high';
+                 if (inp== 5)
+                     throw 'average';
+                 if (inp < 5)
+                     throw 'low';
+             } catch (err) {
+                 message.innerHTML = "Output " + err;
+             }
+         }
         
     </script>
 </div>
